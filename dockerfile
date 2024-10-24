@@ -4,7 +4,7 @@ FROM archlinux:latest
 # Update system and install necessary packages
 RUN pacman -Syu --noconfirm && \
     pacman -S --noconfirm git archiso grub && \
-    cp /airootfs/usr/bin/blend-inst airootfs/usr/bin/blend-inst.backup
+    cp /usr/bin/blend-inst /usr/bin/blend-inst.backup
 # Create a directory for the workspace
 WORKDIR /workdir
 
