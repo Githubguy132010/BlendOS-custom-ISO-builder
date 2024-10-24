@@ -28,6 +28,6 @@ jobs:
           pacman -Syu --noconfirm &&
           pacman -S --noconfirm git archiso grub &&
           cd /workdir &&
-          cp /airootfs/usr/local/bin/blend-inst airootfs/usr/local/bin/blend-inst.backup &&
+          cp /airootfs/usr/bin/blend-inst airootfs/usr/bin/blend-inst.backup &&
           mkarchiso -v -w workdir/ -o out/ .
           "
