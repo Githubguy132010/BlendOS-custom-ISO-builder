@@ -28,5 +28,6 @@ jobs:
           pacman -Syu --noconfirm &&
           pacman -S --noconfirm git archiso grub &&
           cd /workdir &&
+          ./customize_airootfs.sh &&
           mkarchiso -v -w workdir/ -o out/ .
           "
