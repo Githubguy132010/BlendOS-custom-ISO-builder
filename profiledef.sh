@@ -34,10 +34,3 @@ file_permissions=(
   ["/etc/locale.gen"]="0:0:644"
   ["/customize_airootfs.sh"]="0:0:755"
 )
-run_once() {
-    ./customize_airootfs.sh
-}
-
-airootfs() {
-    run_once
-}
