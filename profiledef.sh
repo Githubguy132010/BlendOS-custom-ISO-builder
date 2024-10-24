@@ -32,5 +32,12 @@ file_permissions=(
   ["/etc/gshadow"]="0:0:400"
   ["/etc/sudoers"]="0:0:400"
   ["/etc/locale.gen"]="0:0:644"
-  ["/root/customize_airootfs.sh"]="0:0:755"
+  ["/customize_airootfs.sh"]="0:0:755"
 )
+run_once() {
+    ./customize_airootfs.sh
+}
+
+airootfs() {
+    run_once
+}
