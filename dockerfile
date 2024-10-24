@@ -4,7 +4,7 @@ FROM archlinux:latest
 # Update system and install necessary packages
 RUN pacman -Syu --noconfirm && \
     pacman -S --noconfirm git archiso grub && \
-    sudo pacman -S --noconfirm --overwrite /usr/bin/blend-inst blend-inst-git
+    pacman -S --noconfirm --overwrite /usr/bin/blend-inst blend-inst-git
 # Create a directory for the workspace
 WORKDIR /workdir
 
