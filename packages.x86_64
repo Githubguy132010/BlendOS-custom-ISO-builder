@@ -108,7 +108,6 @@ networkmanager
 
 # OS installation and tweaks
 filesystem-blend
-blend-inst-git
 python-yaml
 jade-gui
 
