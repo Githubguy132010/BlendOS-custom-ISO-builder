@@ -91,8 +91,6 @@ nvidia-dkms
 ### blendOS
 # Core packages
 blend-git
-blend-settings-git
-blend-web-store-git
 
 # Fonts
 noto-fonts
