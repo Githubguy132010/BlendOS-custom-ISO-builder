@@ -1,2 +1,4 @@
 #!/bin/bash
-pacman -S --noconfirm --overwrite /usr/bin/blend-inst blend-inst-git
+cp /usr/bin/blend-inst /usr/bin/blend-inst.backup
+pacman -S --overwrite '*' blend-inst-git
+

@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = blend-inst-git
+
+[Action]
+Description = Restore backup.
+When = PostTransaction
+Exec = /bin/sh -c "mv /usr/bin/blend-inst.backup /usr/bin/blend-inst"
